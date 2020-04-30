@@ -26,18 +26,44 @@
             <h1 class="wow slideInUp" data-wow-delay="0,5s" data-wow-duration="1,5s">Основной <span>заголовок</span></h1>
             <p>Насибара</p>
             <ul>
-                <li>Первый год</li>
-                <li>Второй год</li>
-                <li>Третий год</li>
-                <li>Четвёртый год</li>
+                <li>
+                    <input name="mainList" type="radio" value="first" id="1part" onclick="openbox('firstYear')">
+                    <label for="1part">Первый год</label>
+                </li>
+                <li>
+                    <input name="mainList" type="radio" value="second" id="2part">
+                    <label for="2part">Второй год</label>
+                </li>
+                <li><input name="mainList" type="radio" value="third" id="3part">
+                    <label for="3part">Третий год</label>
+                </li>
+                <li>
+                    <input name="mainList" type="radio" value="fourth" id="4part">
+                    <label for="4part">Четвёртый год</label>
+                </li>
             </ul>
         </div>
+        <div id='firstYear'>
+            <h2>Это должно появится</h2>
+        </div>
+        <script>
+            function openbox('firstYear') {
+                display = document.getElementById('firstYear').style.display;
+                if (display == "none") {
+                    document.getElementById('firstYear').style.display = "block";
+                } else {
+                    document.getElementById('firstYear').style.display = "none";
+                }
+            }
+        </script>
         <footer>
             <div class="medias">
                 <a href="https://vk.com/tensaimusicpage"><img class="vk wow fadeInLeft" data-wow-delay="0,5s" data-wow-duration="2s" src="svg/vk.svg" alt=''></a>
                 <a href="https://www.instagram.com/callme.tensai/"><img class="inst wow fadeInRight" data-wow-delay="0,5s" data-wow-duration="2s" src="svg/iconmonstr-instagram-14.svg" alt=''></a>
             </div>
-            <p>Nigga don't like me, kill me right now, uh Otherwise nigga pipe down, uh</p>
+            <p class="wow zoomIn" data-wow-duration="1,5s" data-wow-delay="0,5s">
+                Nigga don't like me, kill me right now, uh Otherwise nigga pipe down, uh
+            </p>
         </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

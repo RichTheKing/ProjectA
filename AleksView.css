@@ -99,6 +99,43 @@ header h2 {
     font-size: 30px;
 }
 
+.mainpart label:hover {
+    text-decoration-line: underline;
+}
+
+.mainpart li:active {
+    opacity: 0.5;
+}
+
+li input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+}
+
+input:checked {
+    border: 6px solid black;
+}
+
+#firstYear {
+    display: none;
+}
+
+#firstYear h2{
+    position: absolute;
+    text-align: center;
+}
+
+input[type="radio"]:checked + div {
+    display: block;
+}
+
 footer {
     background-color: white;
 }
