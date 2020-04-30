@@ -51,7 +51,7 @@
 
 html {  
     overflow-x: hidden;
-    width: 1382px; 
+    width: 100%; 
     margin-top: -33px;
 }
 
@@ -70,14 +70,13 @@ header h2 {
     font-family: 'Copperplate Gothic Bold';
     font-size: 40px;
     padding-top: 10px;
-    padding-left: 60px;
+    padding-left: 10%;
 }
 
 .mainpart {
     text-align: center;
     color: whitesmoke;
     font-family: 'Bauhaus';
-    height: 570px;
 }
 .mainpart h1 {
     font-size: 60px;
@@ -107,14 +106,14 @@ footer {
 footer p {
     position: absolute;
     color: whitesmoke;
-    left: 400px;
+    left: 35%;
     background-color: black;
     font-size: 18px;
     font-family: 'Bauhaus'
 }
 
 .medias {
-    padding-left: 620px;
+    padding-left: 47%;
     margin-top: 20px;
     margin-bottom: 50px;
 }
